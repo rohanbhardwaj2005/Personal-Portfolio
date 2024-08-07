@@ -92,7 +92,7 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: "public/cine-wishlist.png",
+    img: "/cine-wishlist.png",
     url: "https://cine-wishlist.netlify.app/",
     github: "https://github.com/rohanbhardwaj2005/",
     title: "Cine Wishlist",
@@ -108,7 +108,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: "public/recipe-rendezvous.png",
+    img: "/recipe-rendezvous.png",
     url: "https://recipe-rendezvous.vercel.app/",
     github: "https://github.com/rohanbhardwaj2005/",
     title: "Recipe Rendezvous",
