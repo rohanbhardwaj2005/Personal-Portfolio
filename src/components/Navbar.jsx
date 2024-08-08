@@ -34,7 +34,7 @@ const Navbar = () => {
       >
         <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
           <h2
-            className="text-3xl font-bold cursor-pointer light:text-333333 dark:text-white"
+            className="text-3xl font-bold cursor-pointer light:text-333333 dark:text-gray"
             style={{ marginRight: "10px" }}
             onClick={toggleDarkMode}
           >
@@ -54,7 +54,7 @@ const Navbar = () => {
                   <a
                     key={id}
                     href={href}
-                    className="capitalize text-lg tracking-wide hover:text-emerald-600 duration-300 light:text-333333 dark:text-gray-300"
+                    className="capitalize text-lg tracking-wide hover:text-emerald-600 duration-300 light:text-333333 dark:text-gray"
                     style={{
                       fontFamily: "Josefin Sans",
                       marginRight: "30px",

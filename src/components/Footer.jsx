@@ -1,4 +1,3 @@
-import React from "react";
 import { FaReact, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { SiTailwindcss, SiVite } from "react-icons/si";
 
@@ -8,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center space-x-4 md:text-left">
           <h3
-            className="sm:text-lg text-white dark:text-gray-300"
+            className="sm:text-lg text-black dark:text-gray-300 footer-text"
             style={{ fontFamily: "Josefin Sans", marginLeft: "30px" }}
           >
             This portfolio was built using
@@ -16,15 +15,15 @@ const Footer = () => {
           <span className="flex space-x-4 text-2xl">
             <FaReact
               title="React"
-              className="hover:text-emerald-500 dark:text-teal-400"
+              className="hover:text-emerald-700 dark:text-emerald-500"
             />
             <SiTailwindcss
               title="Tailwind CSS"
-              className="hover:text-emerald-500 dark:text-teal-400"
+              className="hover:text-emerald-700 dark:text-emerald-500"
             />
             <SiVite
               title="Vite"
-              className="hover:text-emerald-500 dark:text-teal-400"
+              className="hover:text-emerald-700 dark:text-emerald-500"
             />
           </span>
         </div>
@@ -42,7 +41,7 @@ const Footer = () => {
             title="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-emerald-500 dark:text-teal-400"
+            className="hover:text-emerald-700 dark:text-emerald-500"
           >
             <FaLinkedin className="text-2xl" />
           </a>
@@ -51,13 +50,13 @@ const Footer = () => {
             title="Github"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-emerald-500 dark:text-teal-400"
+            className="hover:text-emerald-500 dark:text-emerald-500"
           >
             <FaGithub className="text-2xl" />
           </a>
           <a
             href="mailto:rohanbrdps@gmail.com"
-            className="hover:text-emerald-500 dark:text-teal-400"
+            className="hover:text-emerald-500 dark:text-emerald-500"
             title="Say Hi!"
           >
             <FaEnvelope className="text-2xl" />

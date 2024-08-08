@@ -1,9 +1,8 @@
+/* Base Styling */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 @layer components {
   .align-element {
@@ -11,12 +10,15 @@
   }
 }
 
+.footer h3 {
+  @apply text-black;
+}
 
 /* Dark Mode Theme */
 .dark {
-    background-color: #121212; 
-    color: #E0E0E0; 
-    font-family: 'Josefin Sans', sans-serif; 
+  background-color: #121212; 
+  color: #E0E0E0; 
+  font-family: 'Josefin Sans', sans-serif; 
 }
 
 .dark .shadow-dark {
@@ -27,8 +29,7 @@
   box-shadow: 0 20px 30px rgba(255, 255, 255, 0.8), 0 30px 35px rgba(255, 255, 255, 0.8);
 }
 
-
-.dark .hero-bar{
+.dark .hero-bar {
   background-color: #1E1E1E;
 }
 
@@ -37,15 +38,15 @@
 }
 
 .dark nav {
-    background-color: #1E1E1E; 
+  background-color: #1E1E1E; 
 }
 
 .dark nav a {
-    color: #E0E0E0; 
+  color: #E0E0E0; 
 }
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-    color: #FFFFFF; 
+  color: #FFFFFF; 
 }
 
 .dark .footer {
@@ -130,5 +131,3 @@
     font-size: 0.5rem;
   }
 }
-
-

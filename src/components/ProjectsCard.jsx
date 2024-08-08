@@ -11,10 +11,10 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
         style={{ fontFamily: "Josefin Sans" }}
       />
       <div className="capitalize p-8">
-        <h2 className="text-xl tracking-wide font-medium dark:text-white">
+        <h2 className="text-xl tracking-wide font-medium dark:text-gray">
           {title}
         </h2>
-        <p className="mt-4 text-slate-700 dark:text-gray-300 leading-loose">
+        <p className="mt-4 text-slate-700 dark:text-gray leading-loose">
           {text}
         </p>
         <div className="mt-4 flex gap-x-4">
