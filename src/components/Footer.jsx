@@ -3,7 +3,7 @@ import { SiTailwindcss, SiVite } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-gray-900 text-gray-400 py-8 dark:bg-emerald-100">
+    <footer className="footer bg-emerald-100 text-gray-400 py-8 dark:bg-emerald-100">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center space-x-4 md:text-left">
           <h3
@@ -13,18 +13,39 @@ const Footer = () => {
             This portfolio was built using
           </h3>
           <span className="flex space-x-4 text-2xl">
-            <FaReact
-              title="React"
-              className="hover:text-emerald-700 dark:text-emerald-500"
-            />
-            <SiTailwindcss
-              title="Tailwind CSS"
-              className="hover:text-emerald-700 dark:text-emerald-500"
-            />
-            <SiVite
-              title="Vite"
-              className="hover:text-emerald-700 dark:text-emerald-500"
-            />
+            <a
+              href="https://reactjs.org/docs/getting-started.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="React Documentation"
+            >
+              <FaReact
+                title="React"
+                className="hover:text-emerald-500 dark:text-emerald-500"
+              />
+            </a>
+            <a
+              href="https://tailwindcss.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Tailwind CSS Documentation"
+            >
+              <SiTailwindcss
+                title="Tailwind CSS"
+                className="hover:text-emerald-500 dark:text-emerald-500"
+              />
+            </a>
+            <a
+              href="https://vitejs.dev/guide/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Vite Documentation"
+            >
+              <SiVite
+                title="Vite"
+                className="hover:text-emerald-500 dark:text-emerald-500"
+              />
+            </a>
           </span>
         </div>
         <div
@@ -37,16 +58,16 @@ const Footer = () => {
           style={{ marginRight: "30px" }}
         >
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/rohan-bhardwaj-3b226724a/"
             title="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-emerald-700 dark:text-emerald-500"
+            className="hover:text-emerald-500 dark:text-emerald-500"
           >
             <FaLinkedin className="text-2xl" />
           </a>
           <a
-            href="https://github.com/your-github-profile"
+            href="https://github.com/rohanbhardwaj2005"
             title="Github"
             target="_blank"
             rel="noopener noreferrer"
