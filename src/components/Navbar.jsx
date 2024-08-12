@@ -1,6 +1,5 @@
 import { links } from "../data";
 import { useState, useEffect } from "react";
-import { toast } from "react-toastify";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(
@@ -74,7 +73,6 @@ const Navbar = () => {
                       if (href === "https://solo-narrative.onrender.com/") {
                         e.preventDefault();
                         window.open(href, "_blank", "noopener,noreferrer");
-                        toast.success("Visiting the blogs page");
                       }
                     }}
                   >

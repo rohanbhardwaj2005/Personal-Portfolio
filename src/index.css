@@ -78,6 +78,30 @@
   color: #2a6534; /* Hover color in dark mode */
 }
 
+.dark .work-page{
+  background-color: #181b21;
+}
+
+.dark .work-ex{
+  color:#E0E0E0;
+}
+
+.dark .work-ex-company{
+  color:#2ead00;
+}
+
+.dark .work-ex-duration{
+  color:#aeadad;
+}
+
+.dark .work-logo{
+  color:#00000022;
+}
+
+.dark .bx{
+  background-color:#1e1e1e;
+}
+
 
 /* Media Queries */
 @media (max-width: 640px) {
