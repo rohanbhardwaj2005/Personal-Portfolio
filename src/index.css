@@ -70,6 +70,15 @@
   background-color: #333; 
 }
 
+.dark .react-icon {
+  color: #10B981; /* Default color in dark mode */
+}
+
+.dark .react-icon:hover {
+  color: #2a6534; /* Hover color in dark mode */
+}
+
+
 /* Media Queries */
 @media (max-width: 640px) {
   .navbar-links {

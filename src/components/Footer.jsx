@@ -21,7 +21,7 @@ const Footer = () => {
             >
               <FaReact
                 title="React"
-                className="hover:text-emerald-500 dark:text-emerald-500"
+                className="react-icon hover:text-emerald-500 dark:text-emerald-500 dark:hover:text-emerald-300"
               />
             </a>
             <a
@@ -32,7 +32,7 @@ const Footer = () => {
             >
               <SiTailwindcss
                 title="Tailwind CSS"
-                className="hover:text-emerald-500 dark:text-emerald-500"
+                className="react-icon hover:text-emerald-500 dark:text-emerald-500"
               />
             </a>
             <a
@@ -43,7 +43,7 @@ const Footer = () => {
             >
               <SiVite
                 title="Vite"
-                className="hover:text-emerald-500 dark:text-emerald-500"
+                className="react-icon hover:text-emerald-500 dark:text-emerald-500"
               />
             </a>
           </span>
@@ -62,7 +62,7 @@ const Footer = () => {
             title="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-emerald-500 dark:text-emerald-500"
+            className="react-icon hover:text-emerald-500 dark:text-emerald-500"
           >
             <FaLinkedin className="text-2xl" />
           </a>
@@ -71,13 +71,13 @@ const Footer = () => {
             title="Github"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-emerald-500 dark:text-emerald-500"
+            className="react-icon hover:text-emerald-500 dark:text-emerald-500"
           >
             <FaGithub className="text-2xl" />
           </a>
           <a
             href="mailto:rohanbrdps@gmail.com"
-            className="hover:text-emerald-500 dark:text-emerald-500"
+            className="react-icon hover:text-emerald-500 dark:text-emerald-500"
             title="Say Hi!"
           >
             <FaEnvelope className="text-2xl" />
