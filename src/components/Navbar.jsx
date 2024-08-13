@@ -2,9 +2,7 @@ import { links } from "../data";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(
-    () => localStorage.getItem("darkMode") === "true",
-  );
+  const [darkMode, setDarkMode] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleDarkMode = () => {
@@ -16,6 +14,10 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  useEffect(() => {
+    document.documentElement.classList.remove("dark");
+  }, []);
 
   useEffect(() => {
     if (darkMode) {

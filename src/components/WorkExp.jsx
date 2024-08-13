@@ -13,6 +13,7 @@ const WorkExperience = () => {
         "Participated in the full Software Development Life Cycle (SDLC), including designing and implementing ASP.NET Web APIs, working with Microsoft SQL Server, and employing Azure DevOps Server for continuous integration and delivery. Used OutSystems and microservices architecture to enhance application functionality and performance.",
       ],
       imageUrl: "/saxo_bank_logo.jpg",
+      websiteUrl: "https://www.home.saxo/",
     },
     {
       company: "Definity Financial",
@@ -24,6 +25,8 @@ const WorkExperience = () => {
         "Utilized ServiceNow to log and manage technical support tickets, streamline incident resolution processes, and improve overall IT service delivery. Ensure timely and effective resolution of issues to maintain high user satisfaction.",
       ],
       imageUrl: "definity_financial_logo.png",
+      websiteUrl:
+        "https://www.definityfinancial.com/English/Overview/default.aspx",
     },
     {
       company: "Dundas Life",
@@ -35,6 +38,7 @@ const WorkExperience = () => {
         "Applied principles of user experience (UX) and user interface design to create intuitive and visually appealing web interfaces. Utilized tools like GoHighLevel to streamline and optimize design processes.",
       ],
       imageUrl: "dundaslife_logo.png",
+      websiteUrl: "https://www.dundaslife.com/",
     },
   ];
 
@@ -55,11 +59,17 @@ const WorkExperience = () => {
             className="bx mb-12 p-8 bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center"
           >
             <div className="work-ex flex-shrink-0 mb-6 md:mb-0 md:mr-8 w-32 h-32">
-              <img
-                src={exp.imageUrl}
-                alt={`${exp.company} logo`}
-                className="w-full h-full object-cover rounded-lg"
-              />
+              <a
+                href={exp.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={exp.imageUrl}
+                  alt={`${exp.company} logo`}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </a>
             </div>
             <div>
               <h3
