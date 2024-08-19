@@ -38,10 +38,11 @@ const Hero = () => {
               <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
             <a
-              href="https://www.linkedin.com/in/rohan-bhardwaj-3b226724a/"
+              href="resume.pdf"
               title="Resume"
+              download="resume.pdf"
               target="_blank"
-              rel="noperener noreferrer"
+              rel="noopener noreferrer"
             >
               <FaFileAlt
                 className="h-7 w-6 text-slate-500 hover:text-black duration-300"
