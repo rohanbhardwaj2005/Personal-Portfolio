@@ -4,6 +4,18 @@ import SectionTitle from "./SectionTitle";
 const WorkExperience = () => {
   const experiences = [
     {
+      company: "Rodan Energy Solutions",
+      role: "Software Developer Intern",
+      duration: "Jan 2025 – May 2025",
+      description: [
+        "Developed and maintained enterprise software solutions using .NET Core, ASP.NET Web API, and C#, adhering to Agile methodologies and best practices. Actively participated in all phases of the Software Development Life Cycle (SDLC), including requirements gathering, solution design, implementation, testing, deployment, maintenance, and operations. Provided ongoing support and troubleshooting to ensure optimal application performance and reliability",
+        "Designed and implemented a client-facing Windows Service application that integrated Azure Service Bus with anRTAC Relay System, enabling real-time message dispatch using Modbus TCP and DNP3 protocols. Engineered a robust and scalable architecture to facilitate seamless communication between cloud-based messaging services and industrial control systems, improving system efficiency and reliability",
+        "Developed and managed CI/CD pipelines in Azure DevOps Server to streamline build, test, and deployment processes. Built automated release pipelines to enhance software delivery efficiency, ensuring continuous integration and deployment across multiple projects. Collaborated with cross-functional teams to conduct sprint planning, retrospectives, and code reviews, contributing to high-quality software releases. Provided ad hoc client support, including issue triage and resolution, to maintain seamless application functionality.",
+      ],
+      imageUrl: "rodan_logo.png",
+      websiteUrl: "https://www.home.saxo/",
+    },
+    {
       company: "Saxo Bank",
       role: "Software Developer Intern",
       duration: "May 2024 - Aug 2024",
@@ -16,17 +28,16 @@ const WorkExperience = () => {
       websiteUrl: "https://www.home.saxo/",
     },
     {
-      company: "Definity Financial",
-      role: "Technical Analyst Intern",
-      duration: "Sep 2023 - Dec 2023",
+      company: "Titl",
+      role: "Front End Developer",
+      duration: "Oct 2024 – Dec 2024",
       description: [
-        "Provided hands-on technical support for computer hardware and network operations, including troubleshooting hardware issues, managing system configurations, and ensuring network connectivity.",
-        "Oversaw the asset management lifecycle by tracking and maintaining computer hardware and software inventory. Utilized inventory management tools to ensure accurate records and efficient resource allocation.",
-        "Utilized ServiceNow to log and manage technical support tickets, streamline incident resolution processes, and improve overall IT service delivery. Ensure timely and effective resolution of issues to maintain high user satisfaction.",
+        " Designed and developed modern, responsive property and login pages using Next.js, ensuring seamless user experience and optimal performance. Leveraged React’s component-based architecture to create reusable UI elements, improving maintainability and scalability. Implemented server-side rendering (SSR) and static site generation (SSG) for enhanced speed and SEO performance. ",
+        "Translated Figma designs into high-quality, pixel-perfect code, maintaining design consistency and accessibility across different screen sizes. Worked closely with designers and stakeholders to refine UI/UX elements, ensuring an intuitive and visually appealing user experience. Integrated Tailwind CSS for efficient styling and enhanced responsiveness, reducing development time while maintaining a clean and scalable codebase.",
+        "Optimized authentication flows and security features for the login page, improving user authentication efficiencyand data protection. Integrated third-party authentication providers using OAuth and JWT-based authentication to enhance security and usability. Conducted thorough testing and debugging to ensure seamless functionality, leveraging tools like Jest and React Testing Library for frontend testing.",
       ],
-      imageUrl: "definity_financial_logo.png",
-      websiteUrl:
-        "https://www.definityfinancial.com/English/Overview/default.aspx",
+      imageUrl: "titl_logo.png",
+      websiteUrl: "https://titl.co/",
     },
     {
       company: "Dundas Life",
