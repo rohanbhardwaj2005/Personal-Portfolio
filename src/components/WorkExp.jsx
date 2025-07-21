@@ -13,7 +13,7 @@ const WorkExperience = () => {
         "Developed and managed CI/CD pipelines in Azure DevOps Server to streamline build, test, and deployment processes. Built automated release pipelines to enhance software delivery efficiency, ensuring continuous integration and deployment across multiple projects. Collaborated with cross-functional teams to conduct sprint planning, retrospectives, and code reviews, contributing to high-quality software releases. Provided ad hoc client support, including issue triage and resolution, to maintain seamless application functionality.",
       ],
       imageUrl: "rodan_logo.png",
-      websiteUrl: "https://www.home.saxo/",
+      websiteUrl: "https://rodanenergy.com/",
     },
     {
       company: "Saxo Bank",
