@@ -3,56 +3,58 @@ import { FaGithubSquare, FaLinkedin, FaFileAlt } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div
-      className="hero-bar bg-emerald-100 py-24"
-      style={{ fontFamily: "Josefin Sans" }}
-    >
-      <div className="align-element grid md:grid-cols-2 items-center gap-8">
-        <article>
-          <h1 className="text-4xl font-bold tracking-wider">
-            Welcome to my Creative World
+    <div className="py-24 sm:py-32" id="home">
+      <div className="align-element grid md:grid-cols-2 items-center gap-16">
+        <article className="order-2 md:order-1">
+          <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Welcome to my <br />
+            <span className="bg-gradient-to-r from-emerald-500 to-cyan-500 bg-clip-text text-transparent">
+              Creative World
+            </span>
           </h1>
-          <br></br>
-          <br></br>
-          <p className="sm:text-xl mt-2 text-lg text-slate-700 ">
-            I’m Rohan, a passionate Full Stack Developer dedicated to turning
-            ideas into reality. With a keen eye for detail and a love for
-            innovation, I craft unique and engaging experiences that captivate
-            and inspire.
+          <p className="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg">
+            Hey, I’m Rohan. I build things for the web from rough ideas to finished products with an eye for detail and a love for clean architecture.
           </p>
-          <div className="flex gap-x-4 mt-4">
+          <div className="flex gap-x-6 mt-8">
             <a
               href="https://github.com/rohanbhardwaj2005"
-              title="Github"
               target="_blank"
-              rel="noperener noreferrer"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors duration-300"
+              aria-label="Github"
             >
-              <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+              <FaGithubSquare className="h-10 w-10" />
             </a>
             <a
               href="https://www.linkedin.com/in/rohan-bhardwaj-3b226724a/"
-              title="Linkedin"
               target="_blank"
-              rel="noperener noreferrer"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors duration-300"
+              aria-label="LinkedIn"
             >
-              <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+              <FaLinkedin className="h-10 w-10" />
             </a>
             <a
               href="resume.pdf"
-              title="Resume"
               download="resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-slate-500 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors duration-300 flex items-center"
+              aria-label="Resume"
             >
-              <FaFileAlt
-                className="h-7 w-6 text-slate-500 hover:text-black duration-300"
-                style={{ marginTop: "2.23px" }}
-              />
+              <FaFileAlt className="h-8 w-8" />
             </a>
           </div>
         </article>
-        <article className="hidden md:block" style={{ marginLeft: "150px" }}>
-          <img src={heroImg} className="h-80 lg:h-96" />
+        <article className="order-1 md:order-2 flex justify-center md:justify-end">
+          <div className="relative group">
+            <div className="absolute -inset-2 bg-emerald-500/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <img
+              src={heroImg}
+              className="h-80 lg:h-96 w-auto relative z-10 drop-shadow-xl transition-transform duration-300 group-hover:scale-105"
+              alt="Hero"
+            />
+          </div>
         </article>
       </div>
     </div>

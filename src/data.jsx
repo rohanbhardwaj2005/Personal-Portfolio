@@ -12,12 +12,11 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandCSharp } from "react-icons/tb";
 
 export const links = [
-  { id: nanoid(), href: "#home", text: "home" },
-  { id: nanoid(), href: "#skills", text: "skills" },
-  { id: nanoid(), href: "#about", text: "about" },
-  { id: nanoid(), href: "https://solo-narrative.onrender.com/", text: "blogs" },
-  { id: nanoid(), href: "#experience", text: "experience" },
-  { id: nanoid(), href: "#projects", text: "projects" },
+  { id: nanoid(), href: "#skills", text: "Skills" },
+  { id: nanoid(), href: "#about", text: "About" },
+  { id: nanoid(), href: "https://solo-narrative.vercel.app/", text: "Blogs" },
+  { id: nanoid(), href: "#experience", text: "Experience" },
+  { id: nanoid(), href: "#projects", text: "Projects" },
 ];
 
 export const skills = [
@@ -107,7 +106,7 @@ export const projects = [
     url: "https://cine-wishlist.netlify.app/",
     github: "https://github.com/rohanbhardwaj2005/",
     title: "Cine Wishlist",
-    text: "Built with React, Vite, and Bootstrap, Cine Wishlist lets movie enthusiasts keep track of must-watch films. Easily add movies, view details, and watch trailers within the app. It uses the TMDB API for trailers and OMDB API for movie data, offering a seamless user experience.",
+    text: "Built with React, Vite, and Bootstrap, Cine Wishlist lets movie enthusiasts keep track of must-watch films. Easily add movies, view details, and watch trailers within the app. It uses the TMDB API for movie data, offering a seamless user experience.",
   },
   {
     id: nanoid(),
@@ -119,10 +118,10 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: "/recipe-rendezvous.png",
-    url: "https://recipe-rendezvous.vercel.app/",
+    img: "/split_logic.png",
+    url: "https://splitlogic.netlify.app/",
     github: "https://github.com/rohanbhardwaj2005/",
-    title: "Recipe Rendezvous",
-    text: "Built with Next.js, Recipe Rendezvous lets food enthusiasts discover and manage their favorite recipes. Easily add, view, and organize recipes with detailed instructions and ingredients. Enjoy a smooth and responsive user experience for effortless meal planning.",
+    title: "Split Logic",
+    text: "Split Logic is a modern expense splitting application that makes it easy to split bills and track expenses with friends and family. Built with React, TypeScript, and Supabase.",
   },
 ];

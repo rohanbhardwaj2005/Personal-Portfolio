@@ -54,64 +54,55 @@ const WorkExperience = () => {
   ];
 
   return (
-    <section
-      id="experience"
-      className="work-page work-ex py-20 hero-bar bg-gray-100"
-      style={{ fontFamily: "Josefin Sans" }}
-    >
-      <div className="work-ex container mx-auto px-6 md:px-12 ">
+    <section id="experience" className="py-24">
+      <div className="align-element">
         <SectionTitle text="Work Experience" />
-        <br></br>
-        <br></br>
-        <br></br>
-        {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="bx mb-12 p-8 bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center"
-          >
-            <div className="work-ex flex-shrink-0 mb-6 md:mb-0 md:mr-8 w-32 h-32">
-              <a
-                href={exp.websiteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={exp.imageUrl}
-                  alt={`${exp.company} logo`}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </a>
-            </div>
-            <div>
-              <h3
-                className="work-ex text-2xl font-semibold text-gray dark:text-gray-900 mb-2"
-                style={{ fontFamily: "Josefin Sans" }}
-              >
-                {exp.role}
-              </h3>
-              <h4
-                className="work-ex-company text-xl text-emerald-600 dark:text-emerald-400 mb-4"
-                style={{ fontFamily: "Josefin Sans" }}
-              >
-                {exp.company}
-              </h4>
-              <p
-                className="work-ex-duration text-gray-500 dark:text-gray-300 mb-6 italic"
-                style={{ fontFamily: "Josefin Sans" }}
-              >
-                {exp.duration}
-              </p>
-              <ul
-                className="work-ex list-disc list-inside text-gray-700 space-y-2"
-                style={{ fontFamily: "Josefin Sans" }}
-              >
-                {exp.description.map((desc, i) => (
-                  <li key={i}>{desc}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
+
+        <div className="mt-12 grid gap-8">
+          {experiences.map((exp, index) => (
+            <article
+              key={index}
+              className="group bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700"
+            >
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <a href={exp.websiteUrl} target="_blank" rel="noopener noreferrer" className="block w-24 h-24 rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-slate-900/5 group-hover:scale-105 transition-transform duration-300">
+                    <img
+                      src={exp.imageUrl}
+                      alt={`${exp.company} logo`}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  </a>
+                </div>
+
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4">
+                    <div>
+                      <h3 className="text-2xl font-bold text-slate-800 dark:text-white">
+                        {exp.role}
+                      </h3>
+                      <h4 className="text-xl font-semibold text-emerald-600 dark:text-emerald-400">
+                        {exp.company}
+                      </h4>
+                    </div>
+                    <span className="mt-2 sm:mt-0 px-3 py-1 text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full">
+                      {exp.duration}
+                    </span>
+                  </div>
+
+                  <ul className="space-y-3">
+                    {exp.description.map((desc, i) => (
+                      <li key={i} className="flex gap-x-3 text-slate-600 dark:text-slate-300 leading-relaxed text-sm md:text-base">
+                        <span className="min-w-[6px] h-[6px] rounded-full bg-emerald-500 mt-2.5"></span>
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

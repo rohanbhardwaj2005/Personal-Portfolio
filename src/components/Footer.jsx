@@ -3,84 +3,65 @@ import { SiTailwindcss, SiVite } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-emerald-100 text-gray-400 py-8 dark:bg-emerald-100">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center space-x-4 md:text-left">
-          <h3
-            className="sm:text-lg text-black dark:text-gray-300 footer-text"
-            style={{ fontFamily: "Josefin Sans", marginLeft: "30px" }}
-          >
+    <footer className="bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-12 transition-colors duration-300 border-t border-slate-200 dark:border-slate-800">
+      <div className="align-element flex flex-col md:flex-row justify-between items-center gap-y-6">
+        <div className="flex flex-col md:flex-row items-center gap-x-4">
+          <h3 className="text-lg font-medium text-slate-800 dark:text-slate-200">
             This portfolio was built using
           </h3>
-          <span className="flex space-x-4 text-2xl">
+          <div className="flex gap-x-4 text-2xl">
             <a
               href="https://reactjs.org/docs/getting-started.html"
               target="_blank"
               rel="noopener noreferrer"
-              title="React Documentation"
+              aria-label="React"
             >
-              <FaReact
-                title="React"
-                className="react-icon hover:text-emerald-500 dark:text-emerald-500 dark:hover:text-emerald-300"
-              />
+              <FaReact className="text-slate-600 hover:text-emerald-500 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors" />
             </a>
             <a
               href="https://tailwindcss.com/docs"
               target="_blank"
               rel="noopener noreferrer"
-              title="Tailwind CSS Documentation"
+              aria-label="Tailwind CSS"
             >
-              <SiTailwindcss
-                title="Tailwind CSS"
-                className="react-icon hover:text-emerald-500 dark:text-emerald-500"
-              />
+              <SiTailwindcss className="text-slate-600 hover:text-emerald-500 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors" />
             </a>
             <a
               href="https://vitejs.dev/guide/"
               target="_blank"
               rel="noopener noreferrer"
-              title="Vite Documentation"
+              aria-label="Vite"
             >
-              <SiVite
-                title="Vite"
-                className="react-icon hover:text-emerald-500 dark:text-emerald-500"
-              />
+              <SiVite className="text-slate-600 hover:text-emerald-500 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors" />
             </a>
-          </span>
+          </div>
         </div>
-        <div
-          className="mb-4 md:mb-0 text-left pr-20 md:text-center"
-          style={{ fontFamily: "Josefin Sans" }}
-        ></div>
 
-        <div
-          className="flex space-x-4 text-center md:text-left mt-4 md:mt-0"
-          style={{ marginRight: "30px" }}
-        >
+        <div className="flex gap-x-6 text-2xl">
           <a
             href="https://www.linkedin.com/in/rohan-bhardwaj-3b226724a/"
-            title="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
-            className="react-icon hover:text-emerald-500 dark:text-emerald-500"
+            aria-label="LinkedIn"
+            className="text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors"
           >
-            <FaLinkedin className="text-2xl" />
+            <FaLinkedin />
           </a>
           <a
             href="https://github.com/rohanbhardwaj2005"
-            title="Github"
             target="_blank"
             rel="noopener noreferrer"
-            className="react-icon hover:text-emerald-500 dark:text-emerald-500"
+            aria-label="Github"
+            className="text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors"
           >
-            <FaGithub className="text-2xl" />
+            <FaGithub />
           </a>
           <a
             href="mailto:rohanbrdps@gmail.com"
-            className="react-icon hover:text-emerald-500 dark:text-emerald-500"
-            title="Say Hi!"
+            aria-label="Email"
+            className="text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400 transition-colors"
           >
-            <FaEnvelope className="text-2xl" />
+            <FaEnvelope />
           </a>
         </div>
       </div>

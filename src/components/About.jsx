@@ -1,28 +1,23 @@
 import aboutSvg from "../assets/about.svg";
 import SectionTitle from "./SectionTitle";
+
 const About = () => {
   return (
-    <section
-      className="hero-bar bg-white py-20"
-      id="about"
-      style={{ fontFamily: "Josefin Sans" }}
-    >
+    <section className="py-24" id="about">
       <div className="align-element grid md:grid-cols-2 items-center gap-16">
-        <img src={aboutSvg} className="w-full h-64" />
-        <article>
+        <div className="relative group">
+          <div className="absolute -inset-2 bg-emerald-500/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <img
+            src={aboutSvg}
+            className="w-full h-auto relative z-10 drop-shadow-xl transition-transform duration-300 group-hover:scale-105"
+            alt="About visualization"
+          />
+        </div>
+        <article className="order-1">
           <SectionTitle text="code and coffee" />
-          <p className="text-slate-600 mt-8 leading-loose">
-            Hey there! I’m Rohan, a passionate software developer with a strong
-            foundation in a diverse range of technologies. My expertise spans
-            across modern web development with React, Next.js, and Vite, as well
-            as backend solutions using Node.js and ASP.NET. With a keen interest
-            in crafting efficient and scalable applications, I've also delved
-            into C++, Java, and Python, mastering various frameworks and
-            libraries along the way. When I'm not diving into code, I'm busy
-            fine tuning personal projects, or exploring the latest trends in
-            software development. Currently, I’m exploring the exciting world of
-            AI and ML, understanding how these cutting-edge technologies can
-            transform the future.
+          <p className="text-slate-600 dark:text-slate-300 mt-8 leading-loose text-lg">
+            I’m a software developer who enjoys turning ideas into clean, scalable applications. I work across the stack with React, Next.js, and Vite on the frontend, and Node.js and ASP.NET on the backend. I’ve also explored C++, Java, and Python, which helps me think about problems beyond a single tech stack.
+            Outside of coursework, you’ll usually find me refining personal projects, experimenting with new tools, or keeping up with emerging trends in software development. Lately, I’ve been diving into AI and ML, excited by how these technologies are shaping the future of software.
           </p>
         </article>
       </div>
