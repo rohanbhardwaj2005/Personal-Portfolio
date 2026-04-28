@@ -4,12 +4,24 @@ import SectionTitle from "./SectionTitle";
 const WorkExperience = () => {
   const experiences = [
     {
+      company: "University of Waterloo",
+      role: "Full Stack Developer Intern",
+      duration: "Jan 2026 – April 2026",
+      description: [
+        "Led the frontend modernization for the MyCEL 2.0 enterprise system, improving performance by 30% and reducing UI defects by 40% by implementing Redux state management and Material UI over legacy architecture.",
+        "Designed and documented RESTful ASP.NET Core APIs to expose business logic and MS SQL Server data models, creating comprehensive SDLC documentation that standardized future development workflows.",
+        "Reduced deployment time by 50% by engineering CI/CD pipelines using GitLab and Jenkins; spearheaded the adoption of these pipelines by mentoring and upskilling a fellow co-op on automated release processes.",
+      ],
+      imageUrl: "uwaterloo.png",
+      websiteUrl: "https://uwaterloo.ca/extended-learning/",
+    },
+    {
       company: "Rodan Energy Solutions",
       role: "Software Developer Intern",
       duration: "Jan 2025 – May 2025",
       description: [
-        "Developed and maintained enterprise software solutions using .NET Core, ASP.NET Web API, and C#, adhering to Agile methodologies and best practices. Actively participated in all phases of the Software Development Life Cycle (SDLC), including requirements gathering, solution design, implementation, testing, deployment, maintenance, and operations. Provided ongoing support and troubleshooting to ensure optimal application performance and reliability",
-        "Designed and implemented a client-facing Windows Service application that integrated Azure Service Bus with anRTAC Relay System, enabling real-time message dispatch using Modbus TCP and DNP3 protocols. Engineered a robust and scalable architecture to facilitate seamless communication between cloud-based messaging services and industrial control systems, improving system efficiency and reliability",
+        "Developed and maintained enterprise software solutions using .NET Core, ASP.NET Web API, and C#, adhering to Agile methodologies and best practices. Actively participated in all phases of the Software Development Life Cycle (SDLC), including requirements gathering, solution design, implementation, testing, deployment, maintenance, and operations. Provided ongoing support and troubleshooting to ensure optimal application performance and reliability.",
+        "Designed and implemented a client-facing Windows Service application that integrated Azure Service Bus with anRTAC Relay System, enabling real-time message dispatch using Modbus TCP and DNP3 protocols. Engineered a robust and scalable architecture to facilitate seamless communication between cloud-based messaging services and industrial control systems, improving system efficiency and reliability.",
         "Developed and managed CI/CD pipelines in Azure DevOps Server to streamline build, test, and deployment processes. Built automated release pipelines to enhance software delivery efficiency, ensuring continuous integration and deployment across multiple projects. Collaborated with cross-functional teams to conduct sprint planning, retrospectives, and code reviews, contributing to high-quality software releases. Provided ad hoc client support, including issue triage and resolution, to maintain seamless application functionality.",
       ],
       imageUrl: "rodan_logo.png",
